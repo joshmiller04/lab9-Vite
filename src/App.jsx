@@ -19,7 +19,7 @@ function Header() {
     <header>
       <h1 style={{ color: "LightBlue" }}>MLB Game Tracker</h1> 
 
-      <p style={{ color: "red" }}>Here’s a quick look at some upcoming matchups this week.</p>
+      <p style={{ color: "red" }}>Here is a quick look at some upcoming matchups this week.</p>
     </header>
   );
 }
