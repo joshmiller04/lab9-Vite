@@ -4,21 +4,22 @@ const games = [
   { id: 1, home: "Tigers", away: "Yankees", isNationalTV: true },
   { id: 2, home: "Dodgers", away: "Giants", isNationalTV: false },
   { id: 3, home: "Cubs", away: "Cardinals", isNationalTV: true },
-  
 ];
 
-function Logo(){
+function Logo() {
   return (
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Major_League_Baseball_logo.svg/640px-Major_League_Baseball_logo.svg.png" alt="MLB Logo" />
-  )
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Major_League_Baseball_logo.svg/640px-Major_League_Baseball_logo.svg.png"
+      alt="MLB Logo"
+      style={{ width: "200px", marginBottom: "20px" }}
+    />
+  );
 }
-
 
 function Header() {
   return (
     <header>
-      <h1 style={{ color: "LightBlue" }}>MLB Game Tracker</h1> 
-
+      <h1 style={{ color: "LightBlue" }}>MLB Game Tracker</h1>
       <p style={{ color: "red" }}>Here is a quick look at some upcoming matchups this week.</p>
     </header>
   );
@@ -43,8 +44,9 @@ function GameList({ games }) {
 function Footer() {
   return (
     <footer>
-      <p style={{ color: " LightBlue" }}>
-      Built by Josh with React to keep track of the games I care about.</p>
+      <p style={{ color: "LightBlue" }}>
+        Built by Josh with React to keep track of the games I care about.
+      </p>
     </footer>
   );
 }
@@ -60,7 +62,7 @@ function App() {
         minHeight: "100vh",
         textAlign: "center",
         fontFamily: "Arial, sans-serif",
-        paddingLeft: "27rem",
+        paddingLeft: "30rem", 
       }}
     >
       <Logo />
